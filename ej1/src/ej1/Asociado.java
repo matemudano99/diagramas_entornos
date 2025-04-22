@@ -1,0 +1,23 @@
+package ej1;
+
+//Clase Asociado (Hereda de Persona)
+public class Asociado extends Persona {
+	private int numeroAsociado;
+
+	public Asociado(String nombre, int edad, int numeroAsociado) {
+		super(nombre, edad);
+		this.numeroAsociado = numeroAsociado;
+	}
+
+	public void mostrarNumeroAsociado() {
+		System.out.println("Número de asociado: " + numeroAsociado);
+	}
+
+	public int getNumeroAsociado() {
+		return numeroAsociado;
+	}
+
+	public void setNumeroAsociado(int numeroAsociado) {
+		this.numeroAsociado = numeroAsociado;
+	}
+}

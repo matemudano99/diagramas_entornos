@@ -1,0 +1,22 @@
+package ej1;
+//Clase Invitado (Hereda de Persona)
+public class Invitado extends Persona {
+private String evento;
+
+public Invitado(String nombre, int edad, String evento) {
+   super(nombre, edad);
+   this.evento = evento;
+}
+
+public void asistirEvento() {
+   System.out.println(getNombre() + " está asistiendo al evento: " + evento);
+}
+
+public String getEvento() {
+   return evento;
+}
+
+public void setEvento(String evento) {
+   this.evento = evento;
+}
+}
