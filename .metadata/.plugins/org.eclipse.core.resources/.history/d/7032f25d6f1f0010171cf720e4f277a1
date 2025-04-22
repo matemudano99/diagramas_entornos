@@ -17,8 +17,7 @@ public class Coche {
         return modelo;
     }
 
-    public String mostrarDetalleDisponibilidad() {
-		Disponibilidad disponibilidad = new Disponibilidad(true, "Parking A, Plaza 15");
+    public String mostrarDetalleDisponibilidad(Disponibilidad disponibilidad) {
         return "El coche " + marca + " " + modelo + " esta " + disponibilidad;
     }
 }
