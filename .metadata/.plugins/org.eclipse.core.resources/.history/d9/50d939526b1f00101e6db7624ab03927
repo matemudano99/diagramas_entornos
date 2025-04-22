@@ -1,0 +1,13 @@
+package ej5;
+
+public class Persona {
+	private DetallePersona detalle;
+
+	public Persona(DetallePersona detalle) {
+		this.detalle = detalle;
+	}
+
+	public String mostrarDatos() {
+		return "Detalles de la persona: " + detalle.toString();
+	}
+}

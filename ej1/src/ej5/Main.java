@@ -1,0 +1,15 @@
+package ej5;
+
+public class Main {
+	public static void main(String[] args) {
+		Coche coche1 = new Coche("Seat", "León");
+		Disponibilidad disponibilidad1 = new Disponibilidad(true, "Parking A, Plaza 15");
+
+		String detalle1 = coche1.mostrarDetalleDisponibilidad(disponibilidad1);
+		System.out.println(detalle1);
+
+		Disponibilidad disponibilidad2 = new Disponibilidad(false, "Taller Central");
+		String detalle2 = coche1.mostrarDetalleDisponibilidad(disponibilidad2);
+		System.out.println(detalle2);
+	}
+}

@@ -1,0 +1,16 @@
+package ej5;
+
+public class Main {
+	public static void main(String[] args) {
+		DetallePersona detalleJuan = new DetallePersona("Juan Pérez", 30, "Masculino", 2500.0, "Ingeniero",
+				"612345678");
+		Persona juan = new Persona(detalleJuan);
+
+		System.out.println(juan.mostrarDatos());
+
+		DetallePersona detalleMaria = new DetallePersona("María López", 25, "Femenino", 2000.0, "Abogada", "698765432");
+		Persona maria = new Persona(detalleMaria);
+
+		System.out.println(maria.mostrarDatos());
+	}
+}

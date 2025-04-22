@@ -1,0 +1,20 @@
+package ej4;
+
+public class Profesor extends Persona {
+	private String departamento;
+
+	public Profesor(String nombre, String dni, String departamento) {
+		super(nombre, dni);
+		this.departamento = departamento;
+	}
+
+	public String getDepartamento() {
+		return departamento;
+	}
+
+	@Override
+	public String presentarse() {
+		return "Buenos días, soy el profesor " + nombre + " con DNI " + dni + " del departamento de " + departamento
+				+ ".";
+	}
+}

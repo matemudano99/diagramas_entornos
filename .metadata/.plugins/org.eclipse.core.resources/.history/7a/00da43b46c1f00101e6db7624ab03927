@@ -1,0 +1,32 @@
+package ej3;
+
+public class Disponibilidad {
+    private boolean disponible;
+    private String ubicacion;
+
+    public Disponibilidad(boolean disponible, String ubicacion) {
+        this.disponible = disponible;
+        this.ubicacion = ubicacion;
+    }
+
+    public boolean isDisponible() {
+        return disponible;
+    }
+
+    public String getUbicacion() {
+        return ubicacion;
+    }
+
+    public void setDisponible(boolean disponible) {
+        this.disponible = disponible;
+    }
+
+    public void setUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;
+    }
+
+    @Override
+    public String toString() {
+        return "Disponible: " + (disponible ? "Sí" : "No") + ", Ubicación: " + ubicacion;
+    }
+}
