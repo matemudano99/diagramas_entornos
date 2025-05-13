@@ -2,10 +2,8 @@ package ej5;
 
 public class Main {
 	public static void main(String[] args) {
-		Coche coche1 = new Coche("Seat", "León");
-
-		String detalle1 = coche1.mostrarDetalleDisponibilidad();
-		System.out.println(detalle1);
-
+		Libro libro1 = new Libro("El Principito", "Amarilla");
+		System.out.println("Título del libro: " + libro1.obtenerTitulo());
+		libro1.obtenerPortada().mostrar();
 	}
 }

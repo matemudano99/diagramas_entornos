@@ -1,0 +1,26 @@
+package ej1_2;
+
+public class Main {
+	public static void main(String[] args) {
+		Alumno ana = new Alumno("Ana Pérez", "12345678A", "Segundo de Primaria", 8.5);
+		Profesor carlos = new Profesor("Carlos López", "98765432B", "Matemáticas");
+		Coordinador sofia = new Coordinador("Sofía Gómez", "11223344C", "Ciencias", "Coordinación de ESO");
+
+		System.out.println("--- Alumno ---");
+		System.out.println(ana.presentarse());
+		System.out.println("Curso: " + ana.getCurso());
+		System.out.println("Nota Media: " + ana.getNotaMedia());
+		System.out.println();
+
+		System.out.println("--- Profesor ---");
+		System.out.println(carlos.presentarse());
+		System.out.println("Departamento: " + carlos.getDepartamento());
+		System.out.println();
+
+		System.out.println("--- Coordinador ---");
+		System.out.println(sofia.presentarse());
+		System.out.println("Departamento: " + sofia.getDepartamento());
+		System.out.println("Responsabilidad: " + sofia.getResponsabilidad());
+		System.out.println(sofia.asignarTarea("Revisar exámenes", "Profesores de Matemáticas"));
+	}
+}

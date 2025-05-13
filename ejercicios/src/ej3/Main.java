@@ -2,15 +2,10 @@ package ej3;
 
 public class Main {
 	public static void main(String[] args) {
-		DetallePersona detalleJuan = new DetallePersona("Juan Pérez", 30, "Masculino", 2500.0, "Ingeniero",
-				"612345678");
-		Persona1 juan = new Persona1(detalleJuan);
+		Coche coche1 = new Coche("Seat", "León");
 
-		System.out.println(juan.mostrarDatos());
+		String detalle1 = coche1.mostrarDetalleDisponibilidad();
+		System.out.println(detalle1);
 
-		DetallePersona detalleMaria = new DetallePersona("María López", 25, "Femenino", 2000.0, "Abogada", "698765432");
-		Persona1 maria = new Persona1(detalleMaria);
-
-		System.out.println(maria.mostrarDatos());
 	}
 }

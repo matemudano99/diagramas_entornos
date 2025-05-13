@@ -2,25 +2,15 @@ package ej2;
 
 public class Main {
 	public static void main(String[] args) {
-		Perro firulais = new Perro("Firulais");
-		Gato misifu = new Gato("Misifu");
-		Pajaro piolin = new Pajaro("Piolín");
+		DetallePersona detalleJuan = new DetallePersona("Juan Pérez", 30, "Masculino", 2500.0, "Ingeniero",
+				"612345678");
+		Persona1 juan = new Persona1(detalleJuan);
 
-		System.out.println("Nombre del perro: " + firulais.getNombre());
-		System.out.println("Sonido del perro: " + firulais.hacerSonido());
-		System.out.println(firulais.amamantar());
-		System.out.println(firulais.ladrar());
-		System.out.println();
+		System.out.println(juan.mostrarDatos());
 
-		System.out.println("Nombre del gato: " + misifu.getNombre());
-		System.out.println("Sonido del gato: " + misifu.hacerSonido());
-		System.out.println(misifu.amamantar());
-		System.out.println(misifu.maullar());
-		System.out.println();
+		DetallePersona detalleMaria = new DetallePersona("María López", 25, "Femenino", 2000.0, "Abogada", "698765432");
+		Persona1 maria = new Persona1(detalleMaria);
 
-		System.out.println("Nombre del pájaro: " + piolin.getNombre());
-		System.out.println("Sonido del pájaro: " + piolin.hacerSonido());
-		System.out.println(piolin.volar());
-		System.out.println(piolin.cantar());
+		System.out.println(maria.mostrarDatos());
 	}
 }
